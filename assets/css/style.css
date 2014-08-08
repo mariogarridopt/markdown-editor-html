@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans|Special+Elite);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Special+Elite|Raleway);
 
 body, html {border: 0px; margin: 0px; padding: 0px; 
 height:98%; position:relative; width:100%;}
@@ -9,10 +9,9 @@ a, a:link {
 }
 
 a:hover {
-	color: #ccc;
+	color: #787878;
 }
 
-.options a, a:link, a:hover {color: inherit;}
 .options {
 	position: absolute;
 	top: 0;
@@ -52,7 +51,8 @@ a:hover {
 	background-color: inherit;
 
     padding: 10px 5px 0 5px;
-	font-family: 'Special Elite', cursive;
+	font-family: 'Raleway', sans-serif;
+	
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 300;
@@ -109,6 +109,9 @@ a:hover {
 	text-align: left;
 	margin-left: 15px;
 }
+
+.help-wrapper .hellper table .symbol {font-family: 'Open Sans', sans-serif;}
+.help-wrapper .hellper table .info {font-family: 'Special Elite', cursive;}
 
 .help-wrapper .hellper .close {
 	position: absolute;
