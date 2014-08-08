@@ -1,0 +1,134 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Special+Elite);
+
+body, html {border: 0px; margin: 0px; padding: 0px; 
+height:98%; position:relative; width:100%;}
+
+a, a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+.options a, a:link, a:hover {color: inherit;}
+.options {
+	position: absolute;
+	top: 0;
+	right: 50px;
+	color: rgb(0,0,0,1);
+	cursor: pointer;
+}
+
+.options i {
+	margin-left: 10px;
+}
+
+.options i:hover {
+	color: #787878;
+}
+
+.container {
+	width: 95%;
+	height: 90%;
+	margin: 30px auto;
+}
+
+.container #text {
+	width: 47%;
+	height: 100%;
+	float: left;
+    border: none;
+    overflow: auto;
+    outline: none;
+    resize:none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    color: inherit;
+	background-color: inherit;
+
+    padding: 10px 5px 0 5px;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 300;
+	text-align: left;
+}
+
+.container #preview {
+	width: 47%;
+	float: right;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 300;
+	text-align: left;
+}
+
+.help-wrapper {
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.help-wrapper .hellper{
+	position: relative;
+	width: 80%;
+	margin:0 auto;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	padding: 3px 5px 3px 5px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+}
+
+.help-wrapper .hellper table {
+	width: 100%;
+	font-size: 12px;
+	text-align: left;
+	border: 0;
+}
+
+.help-wrapper .hellper table .symbol {
+	display: inline-block;
+	text-align: right;
+	width: 100px;
+	overflow: hidden;
+	margin-right: 15px;
+}
+
+.help-wrapper .hellper table .info {
+	display: inline-block;
+	text-align: left;
+	margin-left: 15px;
+}
+
+.help-wrapper .hellper .close {
+	position: absolute;
+	right: 7px;
+	cursor: pointer;
+}
+
+.help-wrapper .hellper .close:hover {color: #787878;}
+
+@media (max-width: 1080px) {
+  .help-wrapper .hellper table .symbol {margin-right: 0;}
+  .help-wrapper .hellper table .info {margin-left: 0;}
+}
+
+@media (max-width: 920px) {
+	.help-wrapper .hellper {width: 97%}
+}
+
+@media (max-width: 750px) {
+	.help-wrapper .hellper {display: none;}
+	.options .fa-info-circle {display: none;}
+	.container #text, .container #preview {float: none;width: 100%;height: 40%;}
+}

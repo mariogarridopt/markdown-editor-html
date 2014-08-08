@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Markdown Text Editor</title>
+	<meta name="description" content="A simple online Markdown text editor"/>
+	<meta name="keywords" content="markdown, texteditor" />
+	<meta name="author" content="mrfhitz" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- script -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<script src="lib/jquery-1.11.1.min.js"></script>
+	<script src="lib/markdown/Markdown.Converter.js"></script>
+	<script src="lib/markdown/Markdown.Sanitizer.js"></script>
+	<script src="lib/markdown/Markdown.Extra.js"></script>
+	<script src="assets/js/default.js"></script>
+</head>
+<body>
+
+<div class="options">
+	<i onclick="toggleColor();" class="fa fa-adjust fa-2x" alt="Change backgound color"></i>
+	<i onclick="toggleInfo();" class="fa fa-info-circle fa-2x" alt="Get helpping info"></i>
+	<a href="https://github.com/mrfhitz/Markdown-online-editor"><i class="fa fa-github fa-2x" alt="Go to git repo"></i></a>
+</div>
+
+<div class="container">
+	<textarea id="text"></textarea>
+	<div id="preview"></div>
+	
+	<div style="clear: both;"></div>
+	<div class="help-wrapper">
+		<div class="hellper">
+		<div class="close" onclick="toggleInfo();"><i class="fa fa-times-circle-o"></i></div>
+			<table border="0">
+				<tr>
+					<td>
+						<span class="symbol"># ## ...</span>>
+						<span class="info">h1 h2 ...</span>
+					</td>
+					<td>
+						<span class="symbol">*text*</span>>
+						<span class="info">Italic</span>
+					</td>
+					<td>
+						<span class="symbol">1. text 2. text</span>>
+						<span class="info">List</span>
+					</td>
+					<td>
+						<span class="symbol">`code`</span>>
+						<span class="info">In-line code</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="symbol">[text](https://link)</span>>
+						<span class="info">Link</span>
+					</td>
+					<td>
+						<span class="symbol">**text**</span>>
+						<span class="info">Bold</span>
+					</td>
+					<td>
+						<span class="symbol">+ bla + bla</span>>
+						<span class="info">List</span>
+					</td>
+					<td>
+						<span class="symbol">***</span>>
+						<span class="info">Horizontal Rule</span>
+					</td>
+				</tr>
+				<tr>
+					
+					<td>
+						<span class="symbol">![alt text](link)</span>>
+						<span class="info">Image</span>
+					</td>
+					<td>
+						<span class="symbol">~~text~~</span>>
+						<span class="info">Strikethrough</span>
+					</td>
+					<td>
+						<span class="symbol">> text</span>>
+						<span class="info">Text quote</span>
+					</td>
+					<td style="text-align: center;">
+						<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">more...</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>
