@@ -4,6 +4,8 @@ This is a simple markdown editor. You can type in one of the page boxes and in t
 
 That will help you to create your own .mr files, because you can create them in the webpage and paste the result in to some .md file.
 
+![HowItWork](http://i.imgur.com/vR3yyz6.gif)
+
 ##Demo
 You can check the webpage here: [mrfhitz.github.io/Markdown-online-editor](https://mrfhitz.github.io/Markdown-online-editor)
 
