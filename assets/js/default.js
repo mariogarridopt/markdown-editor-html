@@ -4,7 +4,7 @@ var colorStatus = true,
 $(function() {
   // When using more than one `textarea` on your page, change the following line to match the one you’re after
   var $textarea = $('textarea'),
-      $preview = $('<div id="preview" />').insertAfter($textarea),
+      $preview = $('<div id="preview" />').insertAfter('#text-holder'),
       converter = new Markdown.getSanitizingConverter();
       Markdown.Extra.init(converter);
       convert = converter.makeHtml;
@@ -51,4 +51,8 @@ function clearPage() {
   $('textarea').val("");
   $('#preview').html("");
   sessionStorage.setItem("mkdowninfo", "");
+}
+
+function copyToClipboard() {
+  window.prompt("Copy to clipboard: Ctrl+C, Enter", $('textarea').val());
 }
