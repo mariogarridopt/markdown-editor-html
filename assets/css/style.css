@@ -1,7 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans|Special+Elite|Raleway);
 
 body, html {border: 0px; margin: 0px; padding: 0px; 
-height:98%; position:relative; width:100%;}
+height:100%; position:relative; width:100%;}
 
 a, a:link {
 	text-decoration: none;
@@ -13,9 +13,6 @@ a:hover {
 }
 
 .options {
-	position: absolute;
-	top: 0;
-	right: 50px;
 	color: rgb(0,0,0,1);
 	cursor: pointer;
 }
@@ -28,16 +25,28 @@ a:hover {
 	color: #787878;
 }
 
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
 .container {
 	width: 95%;
 	height: 90%;
-	margin: 30px auto;
+	margin: 10px auto;
+}
+
+.container #text-holder {
+	width: 47%;
+	height: 100%;
 }
 
 .container #text {
-	width: 47%;
+	width: 100%;
 	height: 100%;
-	float: left;
     border: none;
     overflow: auto;
     outline: none;
@@ -50,7 +59,7 @@ a:hover {
     color: inherit;
 	background-color: inherit;
 
-    padding: 10px 5px 0 5px;
+    padding: 22px 5px 0 5px;
 	font-family: 'Raleway', sans-serif;
 	
 	font-size: 18px;
@@ -62,6 +71,11 @@ a:hover {
 .container #preview {
 	width: 47%;
 	float: right;
+	display: inline-block;
+	overflow-y: auto;
+	overflow-x: hidden;
+	word-wrap: break-word;
+
 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;

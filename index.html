@@ -18,16 +18,21 @@
 	<script src="assets/js/default.js"></script>
 </head>
 <body>
-
-<div class="options">
-	<i onclick="clearPage();" class="fa fa-trash-o fa-2x" alt="Clear page"></i>
+&nbsp;
+<div class="options" style="position: absolute; top: 10px; right: 50px;">
 	<i onclick="toggleColor();" class="fa fa-adjust fa-2x" alt="Change backgound color"></i>
 	<i onclick="toggleInfo();" class="fa fa-info-circle fa-2x" alt="Get helpping info"></i>
 	<a href="https://github.com/mrfhitz/Markdown-online-editor"><i class="fa fa-github fa-2x" alt="Go to git repo"></i></a>
 </div>
 
 <div class="container">
-	<textarea id="text" placeholder="You can type your text here."></textarea>
+	<div id="text-holder" class="left" style="position: relative;">
+		<div class="options" style="position: absolute; top: -10px; right: 0">
+			<i onclick="clearPage();" class="fa fa-trash-o fa-2x" alt="Clear page"></i>
+			<i onclick="copyToClipboard();" class="fa fa-clipboard fa-2x" alt="Copy file"></i>
+		</div>
+		<textarea id="text" placeholder="You can type your text here."></textarea>
+	</div>
 	
 	<div style="clear: both;"></div>
 	<div class="help-wrapper">
