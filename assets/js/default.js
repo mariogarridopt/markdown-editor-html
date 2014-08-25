@@ -11,7 +11,7 @@ $(function() {
 
       var text = sessionStorage.getItem("mkdowninfo");
       if(text == null || text == "null" || text == "")
-      	text = "Hi\n==\nYou can type your text **here**.";
+      	text = "";//"Hi\n==\nYou can type your text **here**.";
 
   // instead of `keyup`, consider using `input` using this plugin: http://mathiasbynens.be/notes/oninput#comment-1
   $textarea.keyup(function() {
@@ -45,4 +45,10 @@ function toggleColor(){
     $('.help-wrapper .hellper').css("background-color", "rgba(255,255,255,0.1)");
   }
   colorStatus = !colorStatus;
+}
+
+function clearPage() {
+  $('textarea').val("");
+  $('#preview').html("");
+  sessionStorage.setItem("mkdowninfo", "");
 }
