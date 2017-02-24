@@ -4,7 +4,7 @@
 <title>Markdown Text Editor</title>
 	<meta name="description" content="A simple online Markdown text editor"/>
 	<meta name="keywords" content="markdown, texteditor" />
-	<meta name="author" content="mrfhitz" />
+	<meta name="author" content="mrfhitz, BlueSky" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<link rel="shortcut icon" href="favicon.ico">
 
@@ -22,16 +22,18 @@
 <div class="options" style="position: absolute; top: 10px; right: 50px;">
 	<i onclick="toggleColor();" class="fa fa-adjust fa-2x" alt="Change backgound color"></i>
 	<i onclick="toggleInfo();" class="fa fa-info-circle fa-2x" alt="Get helpping info"></i>
-	<a href="https://github.com/mrfhitz/Markdown-online-editor"><i class="fa fa-github fa-2x" alt="Go to git repo"></i></a>
+	<a href="https://github.com/BlueSky-07/Markdown-online-editor" target="_blank"><i class="fa fa-github fa-2x" alt="Go to git repo"></i></a>
 </div>
 
 <div class="container">
 	<div id="text-holder" class="left" style="position: relative;">
-		<div class="options" style="position: absolute; top: -10px; right: 0">
+		<div class="options" style="position: absolute; top: -10px; right: 5px;">
+			<i onclick="submitContent();" class="fa fa-upload fa-2x" alt="Save to server"></i>
+			<i onclick="loadContent();" class="fa fa-download fa-2x" alt="Load from server"></i>
 			<i onclick="clearPage();" class="fa fa-trash-o fa-2x" alt="Clear page"></i>
 			<i onclick="copyToClipboard();" class="fa fa-clipboard fa-2x" alt="Copy file"></i>
 		</div>
-		<textarea id="text" placeholder="You can type your text here."></textarea>
+		<textarea name="contents" id="text" placeholder="You can type your text here."></textarea>
 	</div>
 	
 	<div style="clear: both;"></div>
