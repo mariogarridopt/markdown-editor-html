@@ -11,7 +11,7 @@
     $res = [];
     $res["error"] = -1;
     $res["text"] = "unknown error";
-
+    /* Check content is not empty */
     $getContents = $_GET["contents"];
     if (empty($getContents)) {
         $res["error"] = 10;
@@ -19,7 +19,7 @@
         exitWith($res);
     }
     $getContents = htmlspecialchars($getContents);
-
+    /* Connect to Mysql */
 	require 'config.php';
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
     if(! $conn ) {
@@ -27,21 +27,25 @@
         $res["text"] = 'Could not connect Mysql: ' . mysqli_error();
         exitWith($res);
     }
+    /* Connect to Database */
     if (!mysqli_select_db( $conn, $dbname )) {
         $res["error"] = -20;
         $res["text"] = 'Could not connect database: ' . mysqli_error();
         exitWith($res);
     }
+    /* Insert info */
     $sql = "INSERT INTO OnlineMarkdown ".
         "(content, time) ".
         "VALUES ".
         "(\"".$getContents."\",NOW());";
+    /* Check Mysql status */
     $retval = mysqli_query( $conn, $sql );
     if(! $retval ) {
         $res["error"] = -30;
         $res["text"] = 'Could not add to Mysql: ' . mysqli_error();
         exitWith($res);
     }
+    /* Get ID */
     $sql = "SELECT  LAST_INSERT_ID();";
     $retval = mysqli_query( $conn, $sql );
     if(! $retval ) {
@@ -55,11 +59,11 @@
         $res["error"] = -40;
         $res["text"] = 'Could not get ID: ' . mysqli_error();
     }
-
+    /* All done */
     $res["error"] = 0;
     $res["text"] = "save success";
     exitWith($res);
-
+    /* Function */
     function exitWith ($errorCode) {
         echo json_encode($errorCode);
         exit();
