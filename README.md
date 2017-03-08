@@ -6,14 +6,25 @@ That will help you to create your own .mr files, because you can create them in 
 
 ![HowItWork](http://i.imgur.com/vR3yyz6.gif)
 
-##Demo
-You can check the webpage here: [mrfhitz.github.io/Markdown-online-editor](https://mrfhitz.github.io/Markdown-online-editor)
+## WHAT'S NEW
+You can save your content to server, or load content from server which you have ever saved.
 
-## Keep upgrading
-Yes, we will keep this project upgraded and hope some of you can help up improve the way it works and add new functionality's. 
+## Requirement
+*details listed are about server I am using, and editor work well*
++ Nginx / Apache
++ PHP 5.5
++ MySQL 5.5
 
-##Acknowledgements 
+## Install
+Upload all files to your server, fill the details of database in *config.php*, then open *http(s)://your.web.site/install.php* to create table in database. If error happens, please check your Database permissions and information in *config.php*.
+
+## Demo
+[https://api.ihint.me/md/](https://api.ihint.me/md/)
+
+## Acknowledgements 
 This project would not be possible without some libraries as:
 
 + [jmcmanus/pagedown-extra](https://github.com/jmcmanus/pagedown-extra)
 + [FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
++ [mrfhitz/Markdown-online-editor](https://github.com/mrfhitz/Markdown-online-editor)
+
