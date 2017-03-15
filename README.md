@@ -7,7 +7,7 @@ That will help you to create your own .mr files, because you can create them in 
 ![HowItWork](http://i.imgur.com/vR3yyz6.gif)
 
 ## Demo
-[www.markdown.mariogarrido.pt](http://markdown.mariogarrido.pt)	
+[http://markdown.mariogarrido.pt](http://markdown.mariogarrido.pt)	
 
 ## Acknowledgements 
 This project would not be possible without some libraries as:
