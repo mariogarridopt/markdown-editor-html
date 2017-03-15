@@ -14,4 +14,3 @@ This project would not be possible without some libraries as:
 
 + [jmcmanus/pagedown-extra](https://github.com/jmcmanus/pagedown-extra)
 + [FortAwesome/Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
-+ [mrfhitz/Markdown-online-editor](https://github.com/mrfhitz/Markdown-online-editor)
