@@ -1,13 +1,14 @@
 Markdown online editor
 ======================
-This is a simple markdown editor. You can type in one of the page boxes and in the other side you will see the respective markdown translation to our normal perspective.
-
-That will help you to create your own .mr files, because you can create them in the webpage and paste the result in to some .md file.
-
-![HowItWork](http://i.imgur.com/vR3yyz6.gif)
+This is a simple markdown editor. You can type in one of the page boxes and on the other side you will see the respective markdown translation to our normal perspective.
 
 ## Demo
-[http://markdown.mariogarrido.pt](http://markdown.mariogarrido.pt)	
+![HowItWork](preview.png)
+
+## Contributing
+This is a simple project that I built some time ago to learn more about markdown parsers in javascript.
+At this point, there is no active development on this project.
+But, if you feel like you can add/contribute something, feel free: Create an Issue and we will work together on the PullRequest.
 
 ## Acknowledgements 
 This project would not be possible without some libraries as:
